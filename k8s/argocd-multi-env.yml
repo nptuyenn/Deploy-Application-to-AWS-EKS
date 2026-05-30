@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/thanhtai2703/Deploy-Application-to-AWS-EKS.git
+    repoURL: https://github.com/nptuyenn/Deploy-Application-to-AWS-EKS.git
     targetRevision: HEAD
     path: k8s/overlays/dev
   destination:
@@ -27,7 +27,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/thanhtai2703/Deploy-Application-to-AWS-EKS.git
+    repoURL: https://github.com/nptuyenn/Deploy-Application-to-AWS-EKS.git
     targetRevision: HEAD
     path: k8s/overlays/staging
   destination:
@@ -48,7 +48,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/thanhtai2703/Deploy-Application-to-AWS-EKS.git
+    repoURL: https://github.com/nptuyenn/Deploy-Application-to-AWS-EKS.git
     targetRevision: HEAD
     path: k8s/overlays/prod
   destination:

@@ -11,6 +11,7 @@ helm repo update
 echo "Installing kube-prometheus-stack..."
 helm upgrade --install monitoring prometheus-community/kube-prometheus-stack \
   --namespace monitoring \
+  --create-namespace \
   --values monitoring-values.yaml \
   --timeout 15m0s
 

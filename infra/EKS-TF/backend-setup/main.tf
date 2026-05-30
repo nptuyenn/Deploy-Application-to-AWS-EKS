@@ -4,7 +4,7 @@ provider "aws" {
 
 # S3 Bucket for Terraform State
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "todo-terraform-state-1967814591"
+  bucket = "todo-terraform-state-10101010"
 
   # Prevent accidental deletion
   lifecycle {

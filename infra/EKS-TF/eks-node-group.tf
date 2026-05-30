@@ -12,7 +12,7 @@ resource "aws_eks_node_group" "eks-node-group" {
   }
 
   ami_type       = "AL2023_x86_64_STANDARD"
-  instance_types = ["t3.large"]
+  instance_types = ["t3.small"]
   disk_size      = 20
   labels = {
     role = "app"
