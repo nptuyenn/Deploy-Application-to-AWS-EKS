@@ -16,15 +16,18 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Setup Node.js and pnpm
+        uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "20"
+      
+      - name: Install pnpm
+        run: npm install -g pnpm
 
       - name: Install and Build
         run: |
-          npm install
-          npm run build
+          pnpm install
+          pnpm run build
         working-directory: frontend
 
   security-scan:
