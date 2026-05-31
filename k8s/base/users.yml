@@ -39,7 +39,7 @@ spec:
                 topologyKey: "kubernetes.io/hostname"
       containers:
         - name: user-service
-          image: k8s-harbor-harbor-e23646dd89-000fac67939de240.elb.us-east-1.amazonaws.com/prod/user-service@sha256:c3e0c5db035e237a5ed6dec7f2d70ed07aec0dcb9e23f8b6e400cae87518b15b
+          image: k8s-harbor-harbor-1d0755b901-1658cc5b72f73256.elb.us-east-1.amazonaws.com/prod/user-service@sha256:1bcac678b8a3af082689d3c28b3b98d569b00383bad57205412b6c78e7a8bbaa
           imagePullPolicy: Always
           ports:
             - containerPort: 8081
