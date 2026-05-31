@@ -1,11 +1,12 @@
 # Stage 1: Build React
-FROM node:18-alpine as build
+FROM node:20-alpine as build
 WORKDIR /app
+RUN npm install -g pnpm
 # Copy lock files to leverage cache
 COPY package.json pnpm-lock.yaml* ./
-RUN npm install
+RUN pnpm install --frozen-lockfile
 COPY . .
-RUN npm run build
+RUN pnpm run build
 
 # Stage 2: Serve with Nginx
 FROM nginx:alpine
