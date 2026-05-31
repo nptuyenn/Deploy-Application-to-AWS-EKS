@@ -15,7 +15,7 @@ function ComponentTest() {
   const handleClick = useCallback(() => {
     console.log("Clicked");
   }, []); // không đổi => Child không re-render
-
+  ////////////////////////////////
   return (
     <div>
       <h2>Count: {count}</h2>
