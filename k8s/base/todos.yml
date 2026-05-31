@@ -45,7 +45,7 @@ spec:
             - containerPort: 8080
           env:
             - name: SPRING_DATASOURCE_URL
-              value: "jdbc:postgresql://postgres-service.databases:5432/todo_db"
+              value: "jdbc:postgresql://postgres-service:5432/todo_db"
             - name: SPRING_DATASOURCE_USERNAME
               value: "postgres" # Or use secret from 'prod' namespace if we copy it
             - name: SPRING_DATASOURCE_PASSWORD
