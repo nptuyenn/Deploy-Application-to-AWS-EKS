@@ -48,7 +48,7 @@ spec:
               topologyKey: "kubernetes.io/hostname"
       containers:
         - name: frontend
-          image: harbor.harbor.svc.cluster.local/prod/frontend@sha256:bcd18c5dac6cf75b534dcf4d12f2ce2fe4c5040bfbfe1a6c082f07f03875fa7b
+          image: k8s-harbor-harbor-1d0755b901-1658cc5b72f73256.elb.us-east-1.amazonaws.com/prod/frontend@sha256:35c6b311a01fc4b80af1710e3fe9f49d38d24182e702e42e9c0d46b0c76e35b9
           ports:
             - containerPort: 80
           resources:
