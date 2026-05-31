@@ -74,5 +74,5 @@ jobs:
               "sha": "${{ github.sha }}",
               "service_dir": "backend/stats-service",
               "manifest_file": "k8s/base/stats.yml",
-              "image_repo": "harbor.harbor.svc.cluster.local/prod/stats-service"
+              "image_repo": "k8s-harbor-harbor-1d0755b901-1658cc5b72f73256.elb.us-east-1.amazonaws.com/prod/stats-service"
             }'

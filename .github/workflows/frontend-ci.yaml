@@ -77,5 +77,5 @@ jobs:
               "sha": "${{ github.sha }}",
               "service_dir": "frontend",
               "manifest_file": "k8s/base/frontend.yml",
-              "image_repo": "harbor.harbor.svc.cluster.local/prod/frontend"
+              "image_repo": "k8s-harbor-harbor-1d0755b901-1658cc5b72f73256.elb.us-east-1.amazonaws.com/prod/frontend"
             }'
