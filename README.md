@@ -4,6 +4,8 @@
 
 ## Architecture Overview
 
+![Architecture Diagram](docs/architecture.svg)
+
 ### 1. 🌍 Infrastructure (AWS & Terraform)
 
 - **VPC:** Custom VPC with **Private** and **Public** subnets.
